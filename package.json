@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local-start": "NODE_ENV=development nodemon -r esm app.js",
+    "start": "node -r esm app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/ykbell09/yvettebell/issues"
   },
-  "homepage": "https://github.com/ykbell09/yvettebell#readme"
+  "homepage": "https://github.com/ykbell09/yvettebell#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  }
 }
