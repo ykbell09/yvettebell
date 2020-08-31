@@ -1,0 +1,38 @@
+#fiber-photos {
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 25px;
+}
+
+.fiber-image {
+    display: inline-block;
+    margin: 10px;
+    
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.fiber-image img {
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+}
+
+.selected {
+    border: solid 3px var(--orange); 
+}
+
+#fiber-title {
+    font-weight: bold;
+}
+
+main section {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.section-container {
+    width: 50%;
+}
