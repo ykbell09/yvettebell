@@ -120,10 +120,40 @@ nav a {
     text-decoration: none;
 }
 
+#mobile-menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #default-menu {
+        display: none;
+        text-align: right;
+    }
+
+    #default-menu li {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #mobile-menu-icon {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-nav-icon {
+        cursor: pointer;
+    }
+
+    #mobile-nav-close-button {
+        display: none;
+    }
+
+}
+
 /* ADD TEXT DECORATION FOR ACTIVE PAGE IN NAV HERE*/
 
 nav img {
-    max-width: 25px;
+    width: 25px;
 }
 
 /* main content  */
@@ -135,6 +165,7 @@ main {
 /* hero style */
 #hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
     align-items: center;
@@ -156,6 +187,16 @@ main {
     margin-left: -200px;
     
     background-color: var(--offwhite);
+}
+
+@media only screen and (max-width: 1024px) {
+    .container-hero-title {
+        margin-left: 0px;
+    }
+
+    .image-hero {
+        max-width: 100%;
+    }
 }
 
 .container-hero-title a,
@@ -242,13 +283,23 @@ main section {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    flex-wrap: wrap;
+
     
     padding: 15px;
-    max-height: 250px;
-    width: 500px;
     
     background: white;
     overflow: hidden;
+}
+
+@media only screen and (min-width: 550px) {
+    .preview-card {
+        flex-wrap: nowrap;
+
+        max-height: 250px;
+        width: 500px;
+    }
+
 }
 
 .preview-card div {
@@ -257,6 +308,13 @@ main section {
 
 .preview-card img {
     max-height: 200px;
+}
+
+@media only screen and (max-width: 449px) {
+    .preview-card img {
+        width: 100%;
+        max-height: 100%;
+    }
 }
 
 /* footer style */
