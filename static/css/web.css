@@ -12,6 +12,12 @@ main section {
     border-radius: 0;
 }
 
+@media only screen and (max-width: 768px) {
+    .tabs-container {
+        width: 90vw;
+    }
+}
+
 .tabs-container p,
 .tabs-container h4 {
     color: var(--grey);

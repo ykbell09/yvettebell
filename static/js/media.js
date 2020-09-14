@@ -53,7 +53,7 @@ const displayPrintProjects = () => {
 
             $('#section-print').append(`
                 <div class="popup shadow" id="img-${i}-${imgIndex}">
-                    <img class=" border" src="${imgSrc}" />
+                    <img class="border" src="${imgSrc}" />
                     <br />
                     <button class="border">close</button>
                 </div>

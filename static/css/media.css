@@ -18,6 +18,17 @@
     grid-column: 1 / span 2;
 }
 
+@media only screen and (max-width: 700px) {
+    .media-display {
+        grid-template-columns: auto;
+        display: grid;
+    }
+
+    .media-display h4 {
+        grid-column: 1 / span 1;
+    }
+}
+
 .media-display img {
     max-width: 300px;
     margin: 15px;
@@ -38,6 +49,14 @@
     padding: 10px 10px 10px 10px;
     background: #fff;
     text-align: center;
+}
+
+.popup img {
+    max-width: 90vw;
+}
+
+iframe {
+    max-width: 100%;
 }
 
 button {
