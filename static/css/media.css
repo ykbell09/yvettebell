@@ -39,30 +39,6 @@
     cursor: pointer;
 }
 
-/* pop ups */
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    padding: 10px 10px 10px 10px;
-    background: #fff;
-    text-align: center;
-}
-
-.popup img {
-    max-width: 90vw;
-}
-
 iframe {
     max-width: 100%;
-}
-
-button {
-    font: inherit;
-    padding: 5px 10px 5px 10px;
-    text-transform: uppercase;
-    /* font-weight: bold; */
-    background-color: var(--offwhite);
 }
