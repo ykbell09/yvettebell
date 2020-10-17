@@ -77,10 +77,11 @@ h4 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 950px;
   justify-content: center;
   /* margin-top: 40vh; */
 }
+
 
 a {
     text-decoration: none;
@@ -102,15 +103,7 @@ a {
   margin: 0px 15px;
 }
 
-@media only screen and (mind-width: 471px) and (max-width: 600px) {
-    .wrapped-dot {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 470px) {
-    .dot {
-    }
     #sub-head {
         display: block;
         text-align: center;
