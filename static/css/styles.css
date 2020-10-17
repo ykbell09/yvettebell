@@ -17,6 +17,10 @@
 }
 
 body {
+    margin: 0;
+}
+
+main {
     background-color: var(--offwhite);
 }
 
@@ -50,6 +54,12 @@ h3 {
     margin: 2px;
 }
 
+h4 {
+    text-transform: uppercase;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 3em;
@@ -72,7 +82,7 @@ h3 {
   /* margin-top: 40vh; */
 }
 
-.hero a {
+a {
     text-decoration: none;
 }
 
@@ -110,7 +120,15 @@ h3 {
 .container-media-icons {
     margin: 25px;
 }
+
 .icon {
     width: 40px;
     margin-right: 10px;
 }
+
+#down-arrow {
+    transform: rotate(180deg);
+    cursor: pointer;
+    margin-top: 50px;
+}
+
