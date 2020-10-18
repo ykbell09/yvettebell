@@ -43,11 +43,11 @@
 
         </section>
 
-        <section id="container-cards">
+        <section id="container-cards" class="container-cards">
 
             <!-- yarn calulator project card -->
-            <div class="project-card two-rows">
-                <img class="card-img" src="images/yarn.jpg" alt="close up of mustard colored knit material" />
+            <div class="project-card shadow">
+                <img class="card-img" src="images/img_yarn.jpg" alt="close up of mustard colored knit material" />
                 <div class="card-info card-project-info">
                     <div class="info">
                         <h4>widget</h4>
@@ -59,9 +59,34 @@
                     </div>
                 </div>
             </div>
+
+            <!-- shopping list project card -- CARD WITH PHOTO CREDIT -->
+            <div class="project-card shadow">
+                <div class="attribute-container">
+
+                    <img class="card-img" src="images/img_groceries.jpg" alt="rows of vegetables in a groceries store" />
+                    <div class="photo-attribute">
+                        Photo by <a class="attribute-link"
+                        href="https://unsplash.com/@nicotitto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">nrd</a>
+                        on <a class="attribute-link"
+                        href="https://unsplash.com/s/photos/groceries?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                    </div>
+                </div>
+
+                <div class="card-info card-project-info">
+                    <div class="info">
+                        <h4>widget</h4>
+                        <h2>shopping list</h2>
+                        <p>A shopping list widget created with JavaScript, and refactored using jQuery.</p>
+                    </div>
+                    <div class="links">
+                        <a href="https://vigorous-bartik-72c9e7.netlify.app/">visit</a><a href="https://github.com/ykbell09/yarnCalculator">source code</a>
+                    </div>
+                </div>
+            </div>
             
             <!-- a-hills project card -->
-            <div class="project-card two-rows">
+            <div class="project-card shadow">
                 <img class="card-img" src="images/img_climbahills.jpg" alt="a person wearing a blue shirt and orange pants climbing on an orange climbing wall with green and blue holds inside of a garage" />
                 <div class="card-info card-project-info">
                     <div class="info">
@@ -76,7 +101,7 @@
             </div>
             
             <!-- ability together project card -->
-            <div class="project-card two-rows">
+            <div class="project-card shadow">
                 <img class="card-img" src="images/img_atlogo.png" alt="Ability Together Inc. logo" />
                 <div class="card-info card-project-info">
                     <div class="info">
@@ -89,8 +114,17 @@
                     </div>
                 </div>
             </div>
+
+        </section>
+
+        <footer>
+
             <!-- contact card -->
-            <div class="project-card three-rows">
+            <div class="shadow" id="contact-card">
+                <div>
+                    <img class="card-info-img" src="images/img_headshot.jpg" />
+                </div>
+
                 <div class="card-info">
                     <h2>contact me</h2>
                     <p>Available for freelance inquiries.</p>
@@ -109,11 +143,10 @@
                             <img src="images/icon_instagram.png" class="icon" alt="Instagram icon" />
                         </a>
                     </div>
-                    <img class="card-info-img" src="images/img_headshot.jpg" />
                 </div>
             </div>
-
-        </section>
+            
+        </footer>
 
     </main>
 </body>

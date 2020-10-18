@@ -125,3 +125,40 @@ a {
     margin-top: 50px;
 }
 
+/* footer */
+
+footer {
+    padding-bottom: 150px;
+}
+#contact-card {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+    #contact-card {
+        max-width: 300px;
+    }
+}
+
+/* contact me */
+.container-cards .contact-icons-link,
+.container-cards .contact-icons-link:active,
+.container-cards .contact-icons-link:hover,
+.container-cards .contact-icons-link:visited {
+    margin-right: 0px;
+}
+
+.card-info-img {
+    border-radius: 50%;
+    width: 250px;
+    padding: 25px;
+}
+
+.project-card {
+    width: 300px;
+    min-height: 400px;
+}
