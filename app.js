@@ -6,8 +6,6 @@ const staticRoute = express.static('static');
 app.use('/', staticRoute);
 app.use('/static', staticRoute);
 
-request.setHeader('Content-Security-Policy', 'default-src https:');
-
 // GLOBAL ERROR HANDLER - TO BE REVIEWED
 const { NODE_ENV } = process.env;
 // COMMENT OUT IF STATEMENT FOR TESTING
