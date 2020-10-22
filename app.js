@@ -1,10 +1,12 @@
-import express from 'express';
+import express, { request } from 'express';
 const app = express();
 app.use(express.json());
 
 const staticRoute = express.static('static');
 app.use('/', staticRoute);
 app.use('/static', staticRoute);
+
+request.setHeader('Content-Security-Policy', 'default-src https:');
 
 // GLOBAL ERROR HANDLER - TO BE REVIEWED
 const { NODE_ENV } = process.env;

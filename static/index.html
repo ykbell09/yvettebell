@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/cards.css" rel="stylesheet" />
+    <!-- <script src="index.js"></script> -->
 
     <title>Yvette Bell</title>
 </head>
@@ -16,14 +17,14 @@
         <section class="hero">
 
             <h1>Yvette Bell</h1>
-            <div id="sub-head">
+            <div class="sub-heading">
                 <h3>fair-weather alpinist</h3>
                 <span class="dot"></span>
                 <h3>mid-grade knitter</h3>
                 <span class="dot"></span>
                 <h3>aspiring web developer</h3>
             </div>
-            <div class="container-media-icons">
+            <div class="container-icons-media">
                 <a href="mailto:hello@yvettebell.com">
                     <img src="images/icon_mail.png" class="icon" alt="email icon" />
                 </a>
@@ -37,83 +38,197 @@
                     <img src="images/icon_instagram.png" class="icon" alt="Instagram icon" />
                 </a>
             </div>
-            <a href="#container-cards">
-                <img src="images/icon_arrow.png" alt="down arrow" class="icon" id="down-arrow" />
+            <a href="#container-cards-project">
+                <img src="images/icon_arrow.png" class="icon" id="down-arrow" alt="down arrow" />
             </a>
 
         </section>
 
-        <section id="container-cards" class="container-cards">
+        <section class="container-cards" id="container-cards-project">
+
+            <h2 class="section-heading">a few project samples ... </h2>
 
             <!-- yarn calulator project card -->
-            <div class="project-card shadow">
-                <img class="card-img" src="images/img_yarn.jpg" alt="close up of mustard colored knit material" />
-                <div class="card-info card-project-info">
-                    <div class="info">
+            <div class="card-content card-content-project shadow">
+                <img class="card-content-img" src="images/img_yarn.jpg"
+                    alt="close up of mustard colored knit material" />
+                <div class="card-content-project-info">
+                    <div class="card-content-info-text">
                         <h4>widget</h4>
                         <h2>yarn calculator</h2>
                         <p>A nifty little tool for calculating the yarn you have, and the yarn you need.</p>
                     </div>
-                    <div class="links">
-                        <a href="https://distracted-wing-c0b75c.netlify.app/">visit</a><a href="https://github.com/ykbell09/yarnCalculator">source code</a>
+                    <div class="card-content-info-links">
+                        <a href="https://distracted-wing-c0b75c.netlify.app/">visit</a><a
+                            href="https://github.com/ykbell09/yarnCalculator">source code</a>
                     </div>
                 </div>
             </div>
 
             <!-- shopping list project card -- CARD WITH PHOTO CREDIT -->
-            <div class="project-card shadow">
+            <div class="card-content shadow">
                 <div class="attribute-container">
 
-                    <img class="card-img" src="images/img_groceries.jpg" alt="rows of vegetables in a groceries store" />
+                    <img class="card-content-img" src="images/img_groceries.jpg"
+                        alt="rows of vegetables in a groceries store" />
                     <div class="photo-attribute">
                         Photo by <a class="attribute-link"
-                        href="https://unsplash.com/@nicotitto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">nrd</a>
+                            href="https://unsplash.com/@nicotitto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">nrd</a>
                         on <a class="attribute-link"
-                        href="https://unsplash.com/s/photos/groceries?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                            href="https://unsplash.com/s/photos/groceries?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
                     </div>
                 </div>
 
-                <div class="card-info card-project-info">
-                    <div class="info">
+                <div class="card-content-project-info">
+                    <div>
                         <h4>widget</h4>
                         <h2>shopping list</h2>
                         <p>A shopping list widget created with JavaScript, and refactored using jQuery.</p>
                     </div>
-                    <div class="links">
-                        <a href="https://vigorous-bartik-72c9e7.netlify.app/">visit</a><a href="https://github.com/ykbell09/yarnCalculator">source code</a>
+                    <div>
+                        <a href="https://vigorous-bartik-72c9e7.netlify.app/">visit</a><a
+                            href="https://github.com/ykbell09/yarnCalculator">source code</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- a-hills project card -->
-            <div class="project-card shadow">
-                <img class="card-img" src="images/img_climbahills.jpg" alt="a person wearing a blue shirt and orange pants climbing on an orange climbing wall with green and blue holds inside of a garage" />
-                <div class="card-info card-project-info">
-                    <div class="info">
+            <div class="card-content shadow">
+                <img class="card-content-img" src="images/img_climbahills.jpg"
+                    alt="a person wearing a blue shirt and orange pants climbing on an orange climbing wall with green and blue holds inside of a garage" />
+                <div class="card-content-project-info">
+                    <div>
                         <h4>website</h4>
                         <h2>the a-hills</h2>
                         <p>A home gym with a database for problem setting.</p>
                     </div>
-                    <div class="links">
-                        <a href="http://www.climbahills.com/">visit</a><a href="https://github.com/ykbell09/climbahills">source code</a>
+                    <div>
+                        <a href="http://www.climbahills.com/">visit</a><a
+                            href="https://github.com/ykbell09/climbahills">source code</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- ability together project card -->
-            <div class="project-card shadow">
-                <img class="card-img" src="images/img_atlogo.png" alt="Ability Together Inc. logo" />
-                <div class="card-info card-project-info">
-                    <div class="info">
+            <div class="card-content shadow">
+                <img class="card-content-img" src="images/img_atlogo.png" alt="Ability Together Inc. logo" />
+                <div class="card-content-project-info">
+                    <div>
                         <h4>website</h4>
                         <h2>Ability Together</h2>
                         <p>An informational wordpress site for a disabilities advocate and public speaker.</p>
                     </div>
-                    <div class="links">
+                    <div>
                         <a href="https://www.abilitytogether.org/">visit</a>
                     </div>
                 </div>
             </div>
+
+            <!-- kobra project card -->
+            <div class="card-content shadow">
+                <img class="card-content-img" src="images/img_kobra.png" alt="Kobra FM youtube video screenshot" />
+                <div class="card-content-project-info">
+                    <div>
+                        <h4>multi media</h4>
+                        <h2>Kobra FM</h2>
+                        <p>Impromptu handmodeling lead to video scripting and recorded product demonstrations.</p>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/playlist?list=PLKOwFM337RTxP31vFEr11VKvv1DLBHL_Y">visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-cards" id="container-about-cards">
+
+            <h2 class="section-heading right">... so, who am I?!</h2>
+
+            <!-- professional interests card -->
+            <div class="card-content shadow">
+
+                <div class="card-content-about">
+                    <div class="card-content-about-info">
+                        <div>
+
+                            <h4>professional</h4>
+                            <h2>interest areas</h2>
+                            <ul>
+                                <li>disability advocacy + accessibility</li>
+                                <li>DEI</li>
+                                <li>front-end development</li>
+                                <li>database management</li>
+                                <li>women supporting women</li>
+                            </ul>
+                            <p>I began my coding journey in 2019 with UCI's Division of Continuing Education. It was
+                                during
+                                a back-end JavaScript class
+                                that I fell in love with the organization of good code, and the magic of building a
+                                full-stack application from scratch.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- about me card -->
+            <div class="card-content shadow">
+
+                <div class="card-content-about">
+                    <div class="card-content-about-info">
+                        <div>
+                            <h4>personal</h4>
+                            <h2>about me</h2>
+                            <p>I enjoy irregular schedules, rock climbing, hiking very slowly, begrudginly cycling,
+                                wishing
+                                running didn't hurt,
+                                reading library books and the periodic video game binge.
+                            </p>
+                            <p>
+                                One of the hobbies, however, that I have enjoyed the longest is working with fibers. I
+                                have
+                                practiced both knitting and
+                                crocheting for many years. My collection of needles and hooks has been handed down for
+                                generations, and I think fondly
+                                of the women who came before me with every project that comes to life.</p>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.ravelry.com/projects/twentymilehike?set=&view=thumbnail&view=thumbnail&page=&search=&sort=created_">Ravelry
+                                projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- tech card -->
+            <div class="card-content shadow">
+
+                <div class="card-content-about">
+                    <div class="card-content-about-info">
+                        <div>
+                            <h4>tech</h4>
+                            <h2>my favorite tools</h2>
+                            <ul>
+                                <li>HTML + CSS</li>
+                                <li>JavaScript</li>
+                                <li>VS Code</li>
+                                <li>SQL + PostregSQL</li>
+                                <li>Node.js + Express</li>
+                                <li>Mocha + Chai</li>
+                                <li>Adobe Photoshop + Lightroom</li>
+                            </ul>
+                            <p>I have worked with many computer and web-based programs throughout my career, however,
+                                these
+                                are the programs and technologies I feel the most at home tinkering with today.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
         </section>
 
@@ -122,13 +237,15 @@
             <!-- contact card -->
             <div class="shadow" id="contact-card">
                 <div>
-                    <img class="card-info-img" src="images/img_headshot.jpg" />
+                    <img class="card-content-contact-img" src="images/img_headshot.jpg" />
                 </div>
 
-                <div class="card-info">
-                    <h2>contact me</h2>
-                    <p>Available for freelance inquiries.</p>
-                    <p>hello@yvettebell.com</p>
+                <div class="card-content-contact-info">
+                    <div>
+                        <h2>contact</h2>
+                        <p>Want to work together? Contact me with any questions!</p>
+                        <p>hello@yvettebell.com</p>
+                    </div>
                     <div class="container-contact-icons">
                         <a href="mailto:hello@yvettebell.com" class="contact-icons-link">
                             <img src="images/icon_mail.png" class="icon" alt="email icon" />
@@ -145,7 +262,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </footer>
 
     </main>

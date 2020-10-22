@@ -26,13 +26,6 @@ main {
 
 /* typography */
 
-.section-shaded h2,
-.section-shaded h4,
-.section-shaded p,
-.section-shaded a {
-    color: var(--offwhite);
-}
-
 h1, 
 h2 {
     font-family: 'Merriweather', serif;
@@ -40,11 +33,14 @@ h2 {
     color: var(--dkgreen);
 }
 
+.section-heading {
+ font-size: 2.5em;
+}
+
 h1 {
     font-size: 5em;
     margin: 0px;
 }
-
 
 h3 {
     font-weight: bold;
@@ -68,26 +64,35 @@ h4 {
     h3 {
         font-size: 1.25em;
     }
-
 }
-
-/* hero */
-
-.hero {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 950px;
-  justify-content: center;
-  /* margin-top: 40vh; */
-}
-
 
 a {
     text-decoration: none;
 }
 
-#sub-head {
+/* general styles */
+
+.right {
+    text-align: right;
+}
+
+.shadow {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px gainsboro;
+}
+
+/* hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 950px;
+}
+
+.sub-heading {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -95,22 +100,23 @@ a {
 }
 
 .dot {
-  height: 8px;
-  width: 8px;
   background-color: var(--ltgreen);
-  border-radius: 50%;
   display: inline-block;
   margin: 0px 15px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
 }
 
+/* change the way the subheading displays to fit on mobile */
 @media only screen and (max-width: 470px) {
-    #sub-head {
+    #sub-heading {
         display: block;
         text-align: center;
     }
 }
 
-.container-media-icons {
+.container-icons-media {
     margin: 25px;
 }
 
@@ -130,6 +136,7 @@ a {
 footer {
     padding-bottom: 150px;
 }
+
 #contact-card {
     max-width: 600px;
     margin: auto;
@@ -144,21 +151,3 @@ footer {
     }
 }
 
-/* contact me */
-.container-cards .contact-icons-link,
-.container-cards .contact-icons-link:active,
-.container-cards .contact-icons-link:hover,
-.container-cards .contact-icons-link:visited {
-    margin-right: 0px;
-}
-
-.card-info-img {
-    border-radius: 50%;
-    width: 250px;
-    padding: 25px;
-}
-
-.project-card {
-    width: 300px;
-    min-height: 400px;
-}
