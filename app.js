@@ -23,9 +23,9 @@ if (NODE_ENV !== 'development' && NODE_ENV !== 'test') { // COMMENT OUT IF STATE
     });
     
     // REDIRECT TO HTTPS
-    app.use((req, res, next) => {
+    app.use(function (req, res, next) {
         if (req.header('x-forward-proto') !== 'https') {
-            req.redirect(`https://${req.header('host')}${req.url}`);
+            req.redirect(`https://www.yvettebell.com}`);
         } else {
             next()
         }
