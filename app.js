@@ -3,14 +3,15 @@ import sslRedirect from 'heroku-ssl-redirect';
 const app = express();
 app.use(express.json());
 
+// enable ssl redirect
+app.use(sslRedirect(['production']));
+
 const staticRoute = express.static('static');
 app.use('/', staticRoute);
 app.use('/static', staticRoute);
 
 const { NODE_ENV } = process.env;
 
-// enable ssl redirect
-app.use(sslRedirect(['production']));
 
 app.get('/test', async (req, res) => {
         res.send(req.headers);
