@@ -10,7 +10,7 @@ app.use('/static', staticRoute);
 const { NODE_ENV } = process.env;
 
 // enable ssl redirect
-app.use(sslRedirect());
+app.use(sslRedirect(['production']));
 
 if (NODE_ENV !== 'development' && NODE_ENV !== 'test') { // COMMENT OUT IF STATEMENT FOR TESTING
     
