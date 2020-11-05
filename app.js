@@ -1,4 +1,5 @@
-import express, { request } from 'express';
+import express from 'express';
+import sslRedirect from 'heroku-ssl-redirect';
 const app = express();
 app.use(express.json());
 
@@ -7,6 +8,9 @@ app.use('/', staticRoute);
 app.use('/static', staticRoute);
 
 const { NODE_ENV } = process.env;
+
+// enable ssl redirect
+app.use(sslRedirect());
 
 if (NODE_ENV !== 'development' && NODE_ENV !== 'test') { // COMMENT OUT IF STATEMENT FOR TESTING
     
@@ -22,14 +26,6 @@ if (NODE_ENV !== 'development' && NODE_ENV !== 'test') { // COMMENT OUT IF STATE
         // res.send(errPageHTML);
     });
     
-    // REDIRECT TO HTTPS
-    app.use(function (req, res, next) {
-        if (req.header('x-forward-proto') !== 'https') {
-            req.redirect(`https://www.yvettebell.com}`);
-        } else {
-            next()
-        }
-    });
 };
 
 const PORT = process.env.PORT || 8000;
