@@ -12,6 +12,17 @@ const { NODE_ENV } = process.env;
 // enable ssl redirect
 app.use(sslRedirect(['production']));
 
+app.get('/test', async (req, res) => {
+        res.send(req.headers);
+    }
+);
+
+
+
+
+
+
+
 if (NODE_ENV !== 'development' && NODE_ENV !== 'test') { // COMMENT OUT IF STATEMENT FOR TESTING
     
     // GLOBAL ERROR HANDLER - TO BE REVIEWED
