@@ -12,18 +12,6 @@ app.use('/static', staticRoute);
 
 const { NODE_ENV } = process.env;
 
-
-app.get('/test', async (req, res) => {
-        res.send(req.headers);
-    }
-);
-
-
-
-
-
-
-
 if (NODE_ENV !== 'development' && NODE_ENV !== 'test') { // COMMENT OUT IF STATEMENT FOR TESTING
     
     // GLOBAL ERROR HANDLER - TO BE REVIEWED
