@@ -6,10 +6,11 @@ const staticRoute = express.static('static');
 app.use('/', staticRoute);
 app.use('/static', staticRoute);
 
-// GLOBAL ERROR HANDLER - TO BE REVIEWED
 const { NODE_ENV } = process.env;
-// COMMENT OUT IF STATEMENT FOR TESTING
-if (NODE_ENV !== 'development' && NODE_ENV !== 'test') {
+
+if (NODE_ENV !== 'development' && NODE_ENV !== 'test') { // COMMENT OUT IF STATEMENT FOR TESTING
+    
+    // GLOBAL ERROR HANDLER - TO BE REVIEWED
     app.use(function (err, req, res, next) {
         console.error(err);
         // then:
@@ -19,7 +20,16 @@ if (NODE_ENV !== 'development' && NODE_ENV !== 'test') {
         });
         // or:
         // res.send(errPageHTML);
-    })
+    });
+    
+    // REDIRECT TO HTTPS
+    app.use((req, res, next) => {
+        if (req.header('x-forward-proto') !== 'https') {
+            req.redirect(`https://${req.header('host')}${req.url}`);
+        } else {
+            next()
+        }
+    });
 };
 
 const PORT = process.env.PORT || 8000;
