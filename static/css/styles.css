@@ -67,14 +67,11 @@ h4 {
     }
 }
 
-a {
-    text-decoration: none;
-}
-
 /* links */
-a,
-a:active,
-a:visited {
+nav a,
+nav a:active,
+nav a:visited,
+.card-content-info-links a {
     display: inline-block;
     color: var(--ltgreen);
     letter-spacing: 2px;
@@ -86,6 +83,10 @@ a:visited {
 
 a:hover {
     font-weight: 100;    
+}
+
+.icon-links a {
+    text-decoration: none;
 }
 
 /* general styles */

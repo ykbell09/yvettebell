@@ -61,12 +61,16 @@
 }
 
 /* links */
-.container-cards a,
-.container-cards a:active,
-.container-cards a:hover,
-.container-cards a:visited {
+.card-content-info-links a,
+.card-content-info-links a:active,
+.card-content-info-links a:hover,
+.card-content-info-links a:visited {
     color: var(--orange);
     display: inline-block;
+}
+
+.card-heading-link {
+    text-decoration: none;
 }
 
 /* contact me */
