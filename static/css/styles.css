@@ -3,10 +3,11 @@
 
 :root {
     --grey: #41393b;
-    --ltgreen: #61988e;
-    --offwhite: #fffbfe;
+    --ltgreen: #56887f;
+    /* --offwhite: #fffbfe; */
+    --offwhite: #fbf8fa;
     --dkgreen: #04313a;
-    --orange: #f6b378;
+    --orange: #f89b49;
 }
 
 * {
@@ -70,6 +71,23 @@ a {
     text-decoration: none;
 }
 
+/* links */
+a,
+a:active,
+a:visited {
+    display: inline-block;
+    color: var(--ltgreen);
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+a:hover {
+    font-weight: 100;    
+}
+
 /* general styles */
 
 .right {
@@ -79,6 +97,26 @@ a {
 .shadow {
     background-color: white;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px gainsboro;
+}
+
+/* nav */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    list-style: none;
+    margin: 0px;
+    padding: 15px 25px;
+}
+
+nav {
+    position: fixed;
+    right: 0px;
+    width: 100%;
+    background-color: var(--offwhite);
+    z-index: 1;
     box-shadow: 0px 0px 5px 2px gainsboro;
 }
 
@@ -136,18 +174,3 @@ a {
 footer {
     padding-bottom: 150px;
 }
-
-#contact-card {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 767px) {
-    #contact-card {
-        max-width: 300px;
-    }
-}
-
