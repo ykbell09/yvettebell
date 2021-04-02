@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+
+:root {
+  --grey: #41393b;
+  --ltgreen: #56887f;
+  /* --offwhite: #fffbfe; */
+  --offwhite: #fbf8fa;
+  --dkgreen: #04313a;
+  --orange: #f89b49;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+body {
+  margin: 0;
+  background-color: var(--offwhite);
+}
+
+/* typography */
+
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  color: var(--dkgreen);
+}
+
+.section-heading {
+  font-size: 2.5em;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--ltgreen);
+  text-transform: lowercase;
+  margin: 2px;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+    margin-bottom: 25px;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+}
+
+/* links */
+nav a,
+nav a:active,
+nav a:visited,
+.card-content-info-links a {
+  display: inline-block;
+  color: var(--ltgreen);
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+a:hover {
+  font-weight: 100;
+}
+
+.icon-links a {
+  text-decoration: none;
+}
+
+/* general styles */
+
+.right {
+  text-align: right;
+}
+
+.shadow {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px gainsboro;
+}
+
+/* nav */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  list-style: none;
+  margin: 0px;
+  padding: 15px 25px;
+}
+
+nav {
+  position: fixed;
+  right: 0px;
+  width: 100%;
+  background-color: var(--offwhite);
+  z-index: 1;
+  box-shadow: 0px 0px 5px 2px gainsboro;
+}
+
+/* hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 950px;
+}
+
+.sub-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  background-color: var(--ltgreen);
+  display: inline-block;
+  margin: 0px 15px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 250px;
+  margin: 25px;
+}
+
+/* change the way the subheading displays to fit on mobile */
+@media only screen and (max-width: 470px) {
+  #sub-heading {
+    display: block;
+    text-align: center;
+  }
+}
+
+.container-icons-media {
+  margin: 25px;
+}
+
+.icon {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#down-arrow {
+  transform: rotate(180deg);
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+/* footer */
+
+footer {
+  padding-bottom: 150px;
+}
