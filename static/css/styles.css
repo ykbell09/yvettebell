@@ -1,3 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kristi&display=swap");
+
+:root {
+  --offwhite: #fbf8fa;
+  --orange: #f89b49;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--offwhite);
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3,
+h4 {
+  font-size: x-large;
+}
+
+.accent-text {
+  font-family: "Kristi", cursive;
+  font-size: 125px;
+}
+
 .icon {
   width: 50px;
   height: 50px;
