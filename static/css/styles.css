@@ -1,15 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kristi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+/* font-family: 'Open Sans Condensed', sans-serif; */
+/* font-family: "Fjalla One", sans-serif; */
+/* font-family: "Kristi", cursive; */
 
 :root {
-  --offwhite: #fbf8fa;
-  --orange: #f89b49;
+  --sage: #94b5b5;
+  --green: #4b6968;
+  --ltgrey: #e2e2e2;
+  --grey: #dfd3e0;
+  --gold: #b89c0f;
+  --black: #070909;
+  --bodyText: font-family: 'Open Sans', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: var(--offwhite);
+  background: var(--grey);
+  color: var(--black);
+  margin: 0;
 }
 
 /* typography */
@@ -22,15 +38,22 @@ h4 {
 
 h1 {
   font-size: 100px;
+  color: var(--ltgrey);
+
 }
 
 h2 {
   font-size: 32px;
 }
 
+#hero h2 {
+  color: var(--ltgrey);
+}
+
 h3,
 h4 {
   font-size: x-large;
+  text-transform: uppercase;
 }
 
 .accent-text {
@@ -38,25 +61,30 @@ h4 {
   font-size: 125px;
 }
 
-.icon {
-  width: 50px;
-  height: 50px;
+.menu-links a {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: x-large;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--ltgrey);
+  padding: 0 25px;
 }
 
-.st0 {
-  fill: none;
-  stroke: #6120a1;
-  stroke-width: 1.25;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10;
+.menu-links a:hover {
+  color: var(--gold);
 }
 
-/* .st1 {
-  fill: none;
-  stroke: #f10e80;
-  stroke-width: 1.1713;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10;
-} */
+.menu-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 10px;
+  max-width: 80%;
+}
+
+/* nav */
+nav {
+  background-color: var(--green);
+  opacity: .8; 
+}
