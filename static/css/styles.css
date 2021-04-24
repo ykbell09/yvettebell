@@ -8,24 +8,39 @@
 
 :root {
   --sage: #94b5b5;
+  --ltsage: #eaf8f8; /* test color */
   --green: #4b6968;
-  --ltgrey: #e2e2e2;
-  --grey: #dfd3e0;
+  --ltgrey: #e2e2e2; /* okay as text, unsure as background */
+  --grey: #d4d3e0; /* unsure, might not use */
   --gold: #b89c0f;
+  --dkgold: #7a680e;
   --black: #070909;
-  --bodyText: font-family: 'Open Sans', sans-serif;
-
+  --shadow: #353d3d;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: var(--grey);
+  background: var(--ltgrey); /* looks too brown as background */
   color: var(--black);
   margin: 0;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+section,
+nav {
+  border: thin red solid;
+}
+
+.section-wrapper {
+  max-width: 1366px;
+  margin: auto;
+  padding: 0 20px;
+  margin-bottom: 50px;
 }
 
 /* typography */
@@ -37,28 +52,61 @@ h4 {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 7em;
   color: var(--ltgrey);
-
+  margin: 100px 0 0 0;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 3em;
 }
 
 #hero h2 {
   color: var(--ltgrey);
+  margin: 0px;
 }
 
 h3,
 h4 {
-  font-size: x-large;
+  margin-bottom: 0;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--ltgrey);
+  margin: 0;
+}
+
+.h3-underline {
+  width: 60px;
+  transform: rotate(90deg);
+  fill: var(--gold);
 }
 
 .accent-text {
   font-family: "Kristi", cursive;
   font-size: 125px;
+  color: var(--green);
+  margin: 10px 0 0 0;
+  line-height: 0;
+  padding-top: 125px;
+  text-align: right;
+  padding-right: 100px;
+}
+
+.boxed-text {
+  border: var(--gold) solid 2px;
+  max-width: 1344px;
+  padding: 50px;
 }
 
 .menu-links a {
@@ -80,11 +128,41 @@ h4 {
   justify-content: flex-end;
   margin: 0;
   padding: 10px;
-  max-width: 80%;
+}
+
+/* button */
+button {
+  background-color: var(--gold);
+  color: var(--ltgrey);
+  font-family: "Fjalla One", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 15px 0 60px 0;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px var(--shadow);
+  border: none;
+}
+
+button:hover {
+  background-color: var(--dkgold);
 }
 
 /* nav */
 nav {
   background-color: var(--green);
-  opacity: .8; 
+  opacity: 0.8;
+  /* position: absolute; */
+  width: 100%;
+}
+
+.background-graphic {
+  fill: var(--gold);
+  width: 600px;
+  transform: rotate(70deg);
+  z-index: -1;
+  position: absolute;
+  left: 50px;
 }
