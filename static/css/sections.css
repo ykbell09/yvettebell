@@ -1,14 +1,26 @@
 /* hero */
-#hero {
+/* #hero {
   background-color: var(--green);
-  background-image: url(../images/placeholder_hero.jpg);
+  background-image: url(../images/headshots/DSCF1068.jpg);
   background-size: cover;
   background-position: right center;
   background-attachment: fixed;
+} */
+
+#subhero {
+  text-align: right;
+}
+
+#subhero img {
+  padding-bottom: 150px;
+} 
+
+#contact {
+  margin-top: 50px;
 }
 
 /* business solutions */
-
+/* 
 #services {
   text-align: center;
 }
@@ -36,7 +48,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border: thin red solid;
+  border: thin var(--grey) solid;
   min-height: 400px;
 }
 
@@ -60,4 +72,4 @@
 
 .list-closed {
   display: none;
-}
+} */

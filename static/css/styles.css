@@ -1,10 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://use.typekit.net/iri0lun.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kristi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
-/* font-family: 'Open Sans Condensed', sans-serif; */
-/* font-family: "Fjalla One", sans-serif; */
-/* font-family: "Kristi", cursive; */
+/* 
+font-family: 'Open Sans Condensed', sans-serif; 
+
+font-family: broadacre-hairline-0,sans-serif;
+font-weight: 100;
+font-style: normal; 
+
+font-family: broadacre-thin-0,sans-serif;
+font-weight: 100;
+font-style: normal; 
+
+font-family: broadacre-medium-0,sans-serif;
+font-weight: 500;
+font-style: normal;
+
+font-family: broadacre-regular-0,sans-serif;
+font-weight: 300;
+font-style: normal;
+*/
 
 :root {
   --sage: #94b5b5;
@@ -12,9 +27,9 @@
   --green: #4b6968;
   --ltgrey: #e2e2e2; /* okay as text, unsure as background */
   --grey: #d4d3e0; /* unsure, might not use */
-  --gold: #b89c0f;
+  --gold: #d99b50;
   --dkgold: #7a680e;
-  --black: #070909;
+  --black: #101810;
   --shadow: #353d3d;
 }
 
@@ -31,29 +46,30 @@ body {
   font-size: 1.2em;
 }
 
-section,
-nav {
-  border: thin red solid;
-}
-
 .section-wrapper {
   max-width: 1366px;
   margin: auto;
   padding: 0 20px;
-  margin-bottom: 50px;
 }
 
 /* typography */
-h1,
+h1 {
+  font-family: broadacre-hairline-0,sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 h2,
 h3,
 h4 {
-  font-family: "Fjalla One", sans-serif;
+  font-family: broadacre-regular-0,sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 h1 {
   font-size: 7em;
-  color: var(--ltgrey);
+  /* color: var(--ltgrey); */
   margin: 100px 0 0 0;
 }
 
@@ -62,14 +78,13 @@ h2 {
 }
 
 #hero h2 {
-  color: var(--ltgrey);
+  /* color: var(--ltgrey); */
   margin: 0px;
 }
 
 h3,
 h4 {
   margin-bottom: 0;
-  text-transform: uppercase;
 }
 
 h3 {
@@ -77,16 +92,12 @@ h3 {
 }
 
 h4 {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 2em;
   font-weight: 300;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--ltgrey);
   margin: 0;
+  color: var(--black);
 }
 
-.h3-underline {
+/* .h3-underline {
   width: 60px;
   transform: rotate(90deg);
   fill: var(--gold);
@@ -106,10 +117,18 @@ h4 {
 .boxed-text {
   border: var(--gold) solid 2px;
   max-width: 1344px;
-  padding: 50px;
+  padding: 50px; 
+}*/
+
+
+a,
+a:hover,
+a:valid {
+  text-decoration: none;
+  color: var(--black);
 }
 
-.menu-links a {
+/* .menu-links a {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: x-large;
   text-decoration: none;
@@ -118,7 +137,8 @@ h4 {
   padding: 0 25px;
 }
 
-.menu-links a:hover {
+.menu-links a:hover,
+.footer-links {
   color: var(--gold);
 }
 
@@ -129,6 +149,12 @@ h4 {
   margin: 0;
   padding: 10px;
 }
+
+
+
+ {
+  justify-content: center;
+} */
 
 /* button */
 button {
@@ -151,10 +177,10 @@ button:hover {
 }
 
 /* nav */
-nav {
+/* nav,
+footer {
   background-color: var(--green);
   opacity: 0.8;
-  /* position: absolute; */
   width: 100%;
 }
 
@@ -165,4 +191,4 @@ nav {
   z-index: -1;
   position: absolute;
   left: 50px;
-}
+} */
